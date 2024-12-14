@@ -2,8 +2,13 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./leftpanel.css";
 
-const LeftSidePanel = () => {
+const LeftSidePanel = (props) => {
   const location = useLocation();
+  const { onLinkSelect } = props;
+
+  const handleLinkClick = (link) => {
+    onLinkSelect(link);
+  };
 
   return (
     <div className="d-flex flex-column">
@@ -13,6 +18,7 @@ const LeftSidePanel = () => {
           className={`nav-sidepanel mt-2 mb-1 ${
             location.pathname === "/home" ? "active" : ""
           }`}
+          onClick={() => handleLinkClick("Home")}
         >
           Home
         </Link>
@@ -21,6 +27,7 @@ const LeftSidePanel = () => {
           className={`nav-sidepanel mt-2 mb-1 ${
             location.pathname === "/online-visits" ? "active" : ""
           }`}
+          onClick={() => handleLinkClick("Online Visits")}
         >
           Online Visits
         </Link>
@@ -29,6 +36,7 @@ const LeftSidePanel = () => {
           className={`nav-sidepanel mt-2 mb-1 ${
             location.pathname === "/lab-reports" ? "active" : ""
           }`}
+          onClick={() => handleLinkClick("Lab Reports")}
         >
           Lab Reports
         </Link>
@@ -37,6 +45,7 @@ const LeftSidePanel = () => {
           className={`nav-sidepanel mt-2 mb-1 ${
             location.pathname === "/prescriptions" ? "active" : ""
           }`}
+          onClick={() => handleLinkClick("Prescriptions")}
         >
           Prescriptions
         </Link>
@@ -45,6 +54,7 @@ const LeftSidePanel = () => {
           className={`nav-sidepanel mt-2 mb-1 ${
             location.pathname === "/appointments" ? "active" : ""
           }`}
+          onClick={() => handleLinkClick("Appointments")}
         >
           Appointments
         </Link>
