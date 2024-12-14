@@ -1,0 +1,117 @@
+.patient-number-badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 30px;
+  height: 16px;
+  background: #acd8d5;
+  border-radius: 40px;
+  font-size: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.patient-box {
+  border: 0.8px solid #efefef;
+  border-radius: 8px;
+}
+
+.patient-search {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  height: 33px;
+  background: #f7f7f7;
+}
+
+.input-group-text {
+  background-color: #f7f7f7 !important;
+  border-color: #ccc !important;
+}
+
+.input-group-text:hover {
+  background-color: #f7f7f7 !important;
+}
+
+.form-control {
+  background-color: #f7f7f7 !important;
+  border-color: #ccc !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #ccc !important;
+}
+
+.patient-cards {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  gap: 8px;
+  overflow-y: auto;
+  height: 20rem;
+}
+
+.patient-cards::-webkit-scrollbar {
+  width: 8px;
+}
+
+.patient-cards::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+
+.patient-cards::-webkit-scrollbar-track {
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+
+.patient-card {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  gap: 12px;
+  /* width: 433px; */
+  height: 56px;
+  background: rgba(0, 0, 0, 0.002);
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.patient-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 3px;
+}
+
+.patient-name {
+  font-size: 16px;
+  font-weight: 510;
+  line-height: 19.09px;
+  letter-spacing: -0.06em;
+  text-align: left;
+}
+
+.patient-purpose {
+  font-size: 10px;
+  font-weight: 510;
+  line-height: 11.93px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #a2a2a2;
+}
+
+.patient-cards-container{
+    margin-top:1rem;
+}

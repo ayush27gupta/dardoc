@@ -54,3 +54,44 @@ export const APPOINT_CARDS_DATA = [
     img: "https://via.placeholder.com/150",
   },
 ];
+
+export const PATIENTS = [
+  {
+    name: "Ayush",
+    purpose: "Lab results consultation",
+    image: "https://example.com/images/ayush.jpg",
+    bookingId: "B001"
+  },
+  {
+    name: "Priya",
+    purpose: "Routine checkup",
+    image: "https://example.com/images/priya.jpg",
+    bookingId: "B002"
+  },
+  {
+    name: "Rahul",
+    purpose: "Follow-up on treatment",
+    image: "https://example.com/images/rahul.jpg",
+    bookingId: "B003"
+  },
+  {
+    name: "Sneha",
+    purpose: "Vaccination appointment",
+    image: "https://example.com/images/sneha.jpg",
+    bookingId: "B004"
+  },
+  {
+    name: "Arjun",
+    purpose: "Physical therapy session",
+    image: "https://example.com/images/arjun.jpg",
+    bookingId: "B005"
+  },
+  {
+    name: "Neha",
+    purpose: "Pre-surgical consultation",
+    image: "https://example.com/images/neha.jpg",
+    bookingId: "B006"
+  }
+];
+
+
