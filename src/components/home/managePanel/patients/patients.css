@@ -52,11 +52,11 @@
   /* border: 2px solid green; */
   gap: 8px;
   overflow-y: auto;
-  height: 20rem;
+  height: 17rem;
 }
 
 .patient-cards::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 .patient-cards::-webkit-scrollbar-thumb {

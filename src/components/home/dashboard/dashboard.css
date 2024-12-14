@@ -1,7 +1,3 @@
-
-.b-blue {
-  border: 2px solid blue;
-}
 .left-main {
   width: 217px;
   height: 100vh;
@@ -9,16 +5,13 @@
   top: 0;
   left: 0;
   padding: 1rem;
-  background-color: #F5F4F7;
+  background-color: #f5f4f7;
   overflow-y: auto;
 }
 
-.central-main {
-  /* width:60vw; */
-}
 .right-main {
   width: 28vw;
-  padding:0rem 0.5rem;
+  padding: 0rem 0.5rem;
 }
 
 .dashboard-container {
