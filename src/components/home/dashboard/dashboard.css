@@ -1,0 +1,35 @@
+.b-red {
+  border: 2px solid red;
+}
+.b-green {
+  border: 2px solid green;
+}
+.b-blue {
+  border: 2px solid blue;
+}
+.left-main {
+  width: 15vw;
+  border: 2px solid yellow;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #F5F4F7;
+  overflow-y: auto;
+}
+
+.central-main {
+  /* width:60vw; */
+}
+.right-main {
+  width: 30vw;
+}
+
+.dashboard-container {
+  margin-left: 15vw;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
