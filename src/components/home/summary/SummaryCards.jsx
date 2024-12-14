@@ -4,7 +4,6 @@ import "./summary.css";
 const SummaryCards = (props) => {
   const { cardsData } = props;
 
-  console.log("catrds", cardsData);
 
   return (
     <div className="summary-cards-container">

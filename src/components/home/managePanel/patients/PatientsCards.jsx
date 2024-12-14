@@ -2,7 +2,6 @@ import React from "react";
 
 const PatientsCards = (props) => {
   const { patientData } = props;
-  console.log("patientsData", patientData);
   return (
     <div className="mt-2 patient-cards">
       {patientData?.map((item, index) => (
