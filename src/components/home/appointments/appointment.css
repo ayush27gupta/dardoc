@@ -1,35 +1,29 @@
-
-
 .appointment-container {
-  border: 2px solid red;
   overflow-y: auto;
-  height:27.5rem;
+  height: 27.5rem;
 }
 
 .appointment-container {
-  border: 2px solid red;
-  overflow-y: auto;  
+  overflow-y: auto;
   height: 27.5rem;
-  padding: 1rem; 
-  border-radius: 8px; 
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .appointment-container::-webkit-scrollbar {
-  width: 5px; 
+  width: 5px;
 }
 
 .appointment-container::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .appointment-container::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
-
-
 
 .appoint-header {
   display: flex;
@@ -177,4 +171,23 @@
   padding: 0;
   border: none;
   background: transparent;
+}
+
+.appoint-book-btn {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: auto;
+  width:5rem;
+  background: #1a1a1a;
+  border-radius: 4px;
+  color: white;
+  font-size: 10px;
+  /* font-weight: 510; */
+  line-height: 9.55px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 
 const AppointmentCards = (props) => {
-
   const { appointCards } = props;
   const [copied, setCopied] = useState(false);
   const textAreaRef = useRef(null);
@@ -53,7 +52,7 @@ const AppointmentCards = (props) => {
                 <div className="appoint-book-det-value">
                   {item?.bookingId}
                   <i
-                    className={`fa fa-copy ${copied ? 'copied' : ''}`}
+                    className={`fa fa-copy ${copied ? "copied" : ""}`}
                     onClick={handleCopy}
                     aria-hidden="true"
                   />
@@ -69,7 +68,9 @@ const AppointmentCards = (props) => {
               </div>
             </div>
           </div>
-          <div className="appoint-call-btn"></div>
+          <div className="appoint-call-btn">
+            <button className="appoint-book-btn">Start Call</button>
+          </div>
         </div>
       ))}
     </div>
