@@ -1,6 +1,6 @@
-.b-red {
+/* .b-red {
   border: 2px solid red;
-}
+} */
 .b-green {
   border: 2px solid green;
 }
@@ -8,8 +8,7 @@
   border: 2px solid blue;
 }
 .left-main {
-  width: 15vw;
-  border: 2px solid yellow;
+  width: 217px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -23,12 +22,11 @@
   /* width:60vw; */
 }
 .right-main {
-  width: 30vw;
+  width: 28vw;
 }
 
 .dashboard-container {
-  margin-left: 15vw;
-  border: 2px solid black;
+  margin-left: 217px;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
