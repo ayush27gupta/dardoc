@@ -1,0 +1,180 @@
+
+
+.appointment-container {
+  border: 2px solid red;
+  overflow-y: auto;
+  height:27.5rem;
+}
+
+.appointment-container {
+  border: 2px solid red;
+  overflow-y: auto;  
+  height: 27.5rem;
+  padding: 1rem; 
+  border-radius: 8px; 
+}
+
+.appointment-container::-webkit-scrollbar {
+  width: 5px; 
+}
+
+.appointment-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px; 
+}
+
+.appointment-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.appoint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.appoint-icon {
+  margin-left: 8px;
+  margin-right: 13px;
+}
+
+.appoint-header-text {
+  font-weight: 560;
+  font-size: 16px;
+}
+.appoint-filter {
+  cursor: pointer;
+}
+.appoint-cards-container {
+  margin-top: 0rem;
+  overflow-y: auto;
+}
+
+.appointment-card {
+  border: 0.8px solid #ececec;
+  border-radius: 4px !important;
+  width: 641px;
+  height: 171px;
+  padding: 20px 16px 16px 16px;
+  gap: 16px;
+  border-radius: 8px 0px 0px 0px;
+  border: 0.8px 0px 0px 0px;
+  opacity: 0px;
+  margin-top: 1rem;
+}
+
+.appoint-card-name-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appoint-card-name {
+  font-size: 18px;
+  font-weight: 510;
+  line-height: 21.48px;
+  letter-spacing: -0.06em;
+  text-align: left;
+}
+
+.appoint-card-patient {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.appoint-with {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.appoint-card-image {
+  border-radius: 50%;
+  margin-bottom: 0.2rem;
+}
+
+.appoint-card-patient-name {
+  font-size: 12px;
+  font-weight: 510;
+  line-height: 14.32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #00000099;
+}
+
+.appoint-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* overflow: hidden; */
+}
+
+.appoint-book-det-header {
+  color: #00000066;
+  font-size: 10px;
+  font-weight: 510;
+  line-height: 11.93px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.appoint-book-det-value {
+  font-size: 10px;
+  font-weight: 510;
+  line-height: 11.93px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.appoint-book {
+  display: flex;
+  flex-direction: column;
+}
+
+.appoint-book-det-header {
+  font-weight: bold;
+}
+
+.appoint-book-det-value {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.appoint-book-det-value i {
+  cursor: pointer;
+  margin-left: 8px;
+  transition: color 0.3s ease;
+}
+
+.appoint-book-det-value i.copied {
+  color: green;
+}
+
+.copied-message {
+  margin-left: 8px;
+  color: green;
+  font-size: 8px;
+}
+
+.hidden-textarea {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
