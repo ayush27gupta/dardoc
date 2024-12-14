@@ -25,6 +25,7 @@
   margin-top: 0.5rem;
   /* border: 2px solid pink; */
   display: flex;
+  padding:0rem 1rem;
   justify-content: space-between;
   align-items: center;
 }

@@ -1,3 +1,4 @@
+
 .b-blue {
   border: 2px solid blue;
 }
@@ -8,7 +9,7 @@
   top: 0;
   left: 0;
   padding: 1rem;
-  background-color: #f5f4f7;
+  background-color: #F5F4F7;
   overflow-y: auto;
 }
 
