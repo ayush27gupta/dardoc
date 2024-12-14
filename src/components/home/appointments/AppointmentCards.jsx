@@ -1,14 +1,7 @@
 import React, { useRef, useState } from "react";
 
 const AppointmentCards = (props) => {
-  const data = {
-    name: "Lab Results Consultation",
-    patientName: "John Doe",
-    date: "2024-12-15",
-    time: "10:00 AM",
-    duration: "30 minutes",
-    bookingId: "ABC123",
-  };
+
   const { appointCards } = props;
   const [copied, setCopied] = useState(false);
   const textAreaRef = useRef(null);
