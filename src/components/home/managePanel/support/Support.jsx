@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types"; 
+import './support.css'
 
 const Support = (props) => {
   const { items } = props;
