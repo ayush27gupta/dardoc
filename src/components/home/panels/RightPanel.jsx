@@ -4,6 +4,12 @@ import Patients from "../managePanel/patients/Patients";
 import Support from "../managePanel/support/Support";
 
 const RightPanel = () => {
+  const supportItems = [
+    { title: "Contact DarDoc Support" },
+    { title: "File a technical issue" },
+    { title: "Snooze" },
+  ];
+
   return (
     <div className="main-right">
       <div className="manage-header header-title">Manage</div>
@@ -13,7 +19,7 @@ const RightPanel = () => {
           <Patients />
         </div>
         <div className="support-container">
-          <Support />
+          <Support items={supportItems} />
         </div>
       </div>
     </div>

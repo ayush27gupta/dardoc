@@ -1,10 +1,9 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 const AppointmentCards = (props) => {
   const { appointCards } = props;
   const [copied, setCopied] = useState(false);
   const textAreaRef = useRef(null);
-
 
   const handleCopy = () => {
     textAreaRef.current.select();
@@ -12,7 +11,6 @@ const AppointmentCards = (props) => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
 
   return (
     <div className="appointment-cards-container">
@@ -72,7 +70,9 @@ const AppointmentCards = (props) => {
             </div>
           </div>
           <div className="appoint-call-btn">
-            <button className="appoint-book-btn" disabled={index !== 0}>Start Call</button>
+            <button className="appoint-book-btn" disabled={index !== 0}>
+              Start Call
+            </button>
           </div>
         </div>
       ))}
