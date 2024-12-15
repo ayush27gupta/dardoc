@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PatientsCards = (props) => {
   const { patientData } = props;
+  const navigate = useNavigate();
+  const handlePatientClick = (data) => {
+    console.log("data", data);
+    navigate(`/patient/${data?.bookingId}`, { state: data });
+  };
   return (
     <div className="mt-2 patient-cards">
       {patientData?.map((item, index) => (
@@ -23,7 +29,12 @@ const PatientsCards = (props) => {
                 </div>
               </div>
             </div>
-            <div className="patient-right"><i class="fa fa-arrow-right" style={{color:"#a2a2a2"}}></i></div>
+            <div
+              className="patient-right"
+              onClick={() => handlePatientClick(item)}
+            >
+              <i class="fa fa-arrow-right" style={{ color: "#a2a2a2" }}></i>
+            </div>
           </div>
         </>
       ))}

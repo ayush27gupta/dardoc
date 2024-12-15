@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import LeftSidePanel from "../home/panels/LeftSidePanel";
 import CenterPanel from "../home/panels/CenterPanel";
-import RightPanel from "../home/panels/RightPanel";
+import PatientRightPanel from "./PatientRightPanel";
+import PatientUserCard from "./PatientUserCard";
 
 const PatientDetails = () => {
   const { id } = useParams();
-  const [patient, setPatient] = useState(null);
   const location = useLocation();
   const [selectedLink, setSelectedLink] = useState("");
+
 
   const links = [
     { path: `/patient/${id}`, label: "Patient Dashboard" },
@@ -18,12 +19,13 @@ const PatientDetails = () => {
     { path: "/appointments", label: "Appointments" },
   ];
 
+
   useEffect(() => {
     switch (location.pathname) {
-      case "/patient/${id}":
+      case `/patient/${id}`:
         setSelectedLink("Patient Dashboard");
         break;
-      case "/patient/${id}/history":
+      case `/patient/${id}/history`:
         setSelectedLink("History");
         break;
       case "/lab-reports":
@@ -38,7 +40,7 @@ const PatientDetails = () => {
       default:
         setSelectedLink("");
     }
-  }, [location.pathname]);
+  }, [location.pathname ,id]);
 
   const handleLinkSelect = (label) => {
     setSelectedLink(label);
@@ -46,7 +48,9 @@ const PatientDetails = () => {
 
   return (
     <div className="d-flex  p-3 dashboard-container">
-      <div className="left-main b-red ">
+      
+      <div className="left-main  ">
+        <div className=""><PatientUserCard /></div>
         <LeftSidePanel links={links} onLinkSelect={handleLinkSelect} />
       </div>
 
@@ -55,7 +59,7 @@ const PatientDetails = () => {
       </div>
 
       <div className="right-main b-blue ">
-        <RightPanel />
+        <PatientRightPanel />
       </div>
     </div>
   );

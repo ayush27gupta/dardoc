@@ -57,37 +57,37 @@ export const APPOINT_CARDS_DATA = [
 
 export const PATIENTS = [
   {
-    name: "Keswin",
+    name: "Keswin Suresh",
     purpose: "Lab results consultation",
     image: "https://example.com/images/ayush.jpg",
     bookingId: "B001"
   },
   {
-    name: "Keswin",
+    name: "Keswin Suresh",
     purpose: "Routine checkup",
     image: "https://example.com/images/priya.jpg",
     bookingId: "B002"
   },
   {
-    name: "Rahul",
+    name: "Rahul Jaykar",
     purpose: "Follow-up on treatment",
     image: "https://example.com/images/rahul.jpg",
     bookingId: "B003"
   },
   {
-    name: "Keswin",
+    name: "Keswin Suresh",
     purpose: "Vaccination appointment",
     image: "https://example.com/images/sneha.jpg",
     bookingId: "B004"
   },
   {
-    name: "Arjun",
+    name: "Arjun Rampal",
     purpose: "Physical therapy session",
     image: "https://example.com/images/arjun.jpg",
     bookingId: "B005"
   },
   {
-    name: "Neha",
+    name: "Neha Chaturvedi",
     purpose: "Pre-surgical consultation",
     image: "https://example.com/images/neha.jpg",
     bookingId: "B006"
