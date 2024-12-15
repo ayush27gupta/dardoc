@@ -1,9 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./home/dashboard/Dashboard";
 import PageNotFound from "./PageNotFound";
-
-const PatientDetails = React.lazy(() => import("./patient/PatientDetails"));
+import PatientDetails from "./patient/PatientDetails";
 
 const Main = () => {
   return (
@@ -17,14 +16,7 @@ const Main = () => {
           <Route path="appointments" element={<Dashboard />} />
           <Route path="history" element={<Dashboard />} />
         </Route>
-        <Route
-          path="/patient/:id"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <PatientDetails />
-            </Suspense>
-          }
-        />
+        <Route path="/patient/:id" element={<PatientDetails />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
