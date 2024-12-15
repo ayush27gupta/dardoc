@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import LeftSidePanel from "../home/panels/LeftSidePanel";
-import CenterPanel from "../home/panels/CenterPanel";
+import PatientCenterPanel from "./PatientCenterPanel";
 import PatientRightPanel from "./PatientRightPanel";
 import PatientUserCard from "./PatientUserCard";
 
@@ -10,7 +10,6 @@ const PatientDetails = () => {
   const location = useLocation();
   const [selectedLink, setSelectedLink] = useState("");
 
-
   const links = [
     { path: `/patient/${id}`, label: "Patient Dashboard" },
     { path: "/history", label: "History" },
@@ -18,7 +17,6 @@ const PatientDetails = () => {
     { path: "/prescriptions", label: "Prescriptions" },
     { path: "/appointments", label: "Appointments" },
   ];
-
 
   useEffect(() => {
     switch (location.pathname) {
@@ -40,7 +38,7 @@ const PatientDetails = () => {
       default:
         setSelectedLink("");
     }
-  }, [location.pathname ,id]);
+  }, [location.pathname, id]);
 
   const handleLinkSelect = (label) => {
     setSelectedLink(label);
@@ -48,14 +46,15 @@ const PatientDetails = () => {
 
   return (
     <div className="d-flex  p-3 dashboard-container">
-      
       <div className="left-main  ">
-        <div className=""><PatientUserCard /></div>
+        <div className="">
+          <PatientUserCard />
+        </div>
         <LeftSidePanel links={links} onLinkSelect={handleLinkSelect} />
       </div>
 
       <div className="center-main b-green flex-grow-1">
-        <CenterPanel header={selectedLink} />
+        <PatientCenterPanel header={selectedLink} />
       </div>
 
       <div className="right-main b-blue ">

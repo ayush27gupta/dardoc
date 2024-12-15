@@ -1,19 +1,20 @@
 import React from "react";
 import "./summary.css";
-import { SUMMARY_CARDS_DATA } from "../../utils/dataConstants";
 import SummaryCards from "./SummaryCards";
 
-const Summary = () => {
+const Summary = (props) => {
+  const { title, cardsData } = props;
   return (
     <div className="summary-container">
       <div className="summary-header">
         <div>
-          <img src="images/heart.jpg" alt="No img" height="25" width="30" />
+          <img src="/images/heart.jpg" alt="No img" height="25" width="30" />
         </div>
-        <div className="summary-title">Summary</div>
+
+        <div className="summary-title">{title}</div>
       </div>
       <div className="summary-cards">
-        <SummaryCards cardsData={SUMMARY_CARDS_DATA} />
+        <SummaryCards cardsData={cardsData} />
       </div>
     </div>
   );
