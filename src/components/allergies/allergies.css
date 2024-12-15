@@ -1,0 +1,84 @@
+.allergy-card {
+  display: flex;
+  padding: 21px 16px 10px;
+  gap: 24px;
+  width: 192px;
+  height: 138px;
+  background: #ffffff;
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.allergies-cards-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  width: 618px;
+}
+
+.allergy-name {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.allergy-cause {
+  font-style: normal;
+  font-weight: 510;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.allergy-rep {
+  font-style: normal;
+  font-weight: 510;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.allergy-reportDate {
+  font-style: normal;
+  font-weight: 510;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.allergy-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.allergy-capsule {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 10px;
+  gap: 10px;
+  width: fit-content;
+  height: 14px;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.allergy-capsule.allergy {
+  background: rgba(255, 149, 0, 0.1);
+  color: #ff9500;
+}
+
+.allergy-capsule.reaction {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+}

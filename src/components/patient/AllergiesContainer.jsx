@@ -1,5 +1,6 @@
 import React from "react";
 import Allergies from "../allergies/Allergies";
+import { ALLERGY_DATA } from "../utils/dataConstants";
 
 const AllergiesContainer = () => {
   const handleAddNewLog = () => {
@@ -21,8 +22,8 @@ const AllergiesContainer = () => {
             </div>
           </div>
         </div>
-        <div className="prescription-cards">
-          <Allergies />
+        <div className="allergy-cards">
+          <Allergies allergyData={ALLERGY_DATA} />
         </div>
       </div>
     </div>

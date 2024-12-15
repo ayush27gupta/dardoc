@@ -290,3 +290,24 @@ export const PRES_DATA = [
     rxId: "RX1003",
   },
 ];
+
+export const ALLERGY_DATA = [
+  {
+    symptom: "allergy",
+    cause: "pollen",
+    report: "reported by patient",
+    reportDate: "2024-12-10",
+  },
+  {
+    symptom: "reaction",
+    cause: "medication",
+    report: "logged by physician",
+    reportDate: "2024-12-12",
+  },
+  {
+    symptom: "allergy",
+    cause: "dust",
+    report: "reported by patient",
+    reportDate: "2024-12-13",
+  },
+];
