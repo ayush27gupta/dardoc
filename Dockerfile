@@ -1,5 +1,5 @@
-# Use the official Node.js image to build the React app
-FROM node:18-alpine as build
+# Use the official Node.js image to build and run the React app
+FROM node:18-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -13,14 +13,8 @@ RUN npm install
 # Copy the rest of your React app's code
 COPY . .
 
-# Build the React app for production
-RUN npm start
+# Expose the port the app will run on (default for React dev server is 3000)
+EXPOSE 3000
 
-# Serve the build using the 'serve' package
-RUN npm install -g serve
-
-# Expose the port the app will run on
-EXPOSE 5000
-
-# Run the app using the serve command
-CMD ["serve", "-s", "build", "-l", "5000"]
+# Run the React development server
+CMD ["npm", "start"]
