@@ -9,6 +9,14 @@ const Dashboard = (props) => {
   const location = useLocation();
   const [selectedLink, setSelectedLink] = useState("");
 
+  const links = [
+    { path: "/home", label: "Home" },
+    { path: "/online-visits", label: "Online Visits" },
+    { path: "/lab-reports", label: "Lab Reports" },
+    { path: "/prescriptions", label: "Prescriptions" },
+    { path: "/appointments", label: "Appointments" },
+  ];
+
   useEffect(() => {
     switch (location.pathname) {
       case "/home":
@@ -31,14 +39,14 @@ const Dashboard = (props) => {
     }
   }, [location.pathname]);
 
-  const handleLinkChange = (link) => {
-    setSelectedLink(link);
+  const handleLinkSelect = (label) => {
+    setSelectedLink(label);
   };
 
   return (
     <div className="d-flex  p-3 dashboard-container">
       <div className="left-main b-red ">
-        <LeftSidePanel onLinkSelect={handleLinkChange} />
+        <LeftSidePanel links={links} onLinkSelect={handleLinkSelect} />
       </div>
 
       <div className="center-main b-green flex-grow-1">
