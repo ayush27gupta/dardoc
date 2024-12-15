@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./home/dashboard/Dashboard";
+import PageNotFound from "./PageNotFound";
 import PatientDetails from "./patient/PatientDetails";
 
 const Main = () => {
@@ -17,6 +18,8 @@ const Main = () => {
           <Route path="appointments" element={<Dashboard />} />
           <Route path="history" element={<Dashboard />} />
         </Route>
+
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );

@@ -13,7 +13,7 @@ const PatientUserCard = () => {
           <div className="user-img"></div>
           <div className="user-dets">
             <div className="user-dets-text">
-              <div className="user-name">{userData.name}</div>
+              <div className="user-name">{userData?.name}</div>
               <div className="user-data">29, Male</div>
               <div className="user-data">Born on : 23 July, 1995</div>
               <div className="user-data">784-1995-9050375-3</div>

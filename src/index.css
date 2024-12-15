@@ -38,16 +38,76 @@
   background-color: grey;
 }
 
-
-.common-trends-container{
+.common-trends-container {
   margin-top: 20px;
   border: 0.8px solid #e6e6e6;
   padding: 0.2rem;
   border-radius: 4px;
 }
 
-.commmon-line-container{
+.commmon-line-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.common-container {
+  width: 642px;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+  gap: 8px;
+}
+
+.common-title {
+  font-weight: 590;
+  margin-left: 0.4rem;
+  font-size: 16px;
+}
+
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.not-found-content {
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.not-found-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: #ff6347; /* Tomato color */
+}
+
+.not-found-message {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.not-found-description {
+  font-size: 16px;
+  color: #6c757d;
+  margin: 20px 0;
+}
+
+.back-home-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-home-button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
 }

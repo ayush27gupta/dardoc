@@ -5,19 +5,6 @@ import "./commonTable.css";
 const CommonTable = (props) => {
   const { columns, data } = props;
 
-  const getClassName = (status) => {
-    switch (status) {
-      case "green":
-        return "inter-capsule green";
-      case "red":
-        return "inter-capsule red";
-      case "yellow":
-        return "inter-capsule yellow";
-      default:
-        return "inter-capsule";
-    }
-  };
-
   return (
     <div className="reusable-table-container">
       <table className="reusable-table">
