@@ -5,7 +5,6 @@ const PatientsCards = (props) => {
   const { patientData } = props;
   const navigate = useNavigate();
   const handlePatientClick = (data) => {
-    console.log("data", data);
     navigate(`/patient/${data?.bookingId}`, { state: data });
   };
   return (

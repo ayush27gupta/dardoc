@@ -5,6 +5,7 @@
   height: 27.5rem;
   padding: 1rem;
   border-radius: 8px;
+  width:642px;
 }
 
 .appointment-container::-webkit-scrollbar {

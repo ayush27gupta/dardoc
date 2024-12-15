@@ -1,0 +1,16 @@
+.patient-graphs-container {
+  width: 642px;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+  gap: 8px;
+}
+
+.obesity-trends {
+}
+
+.graph-trends {
+  margin-top: 20px;
+  border: 0.8px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 4px;
+}

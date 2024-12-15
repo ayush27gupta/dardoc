@@ -1,8 +1,7 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "./home/dashboard/Dashboard";
 import PatientDetails from "./patient/PatientDetails";
-import History from "./patient/History";
 
 const Main = () => {
   return (

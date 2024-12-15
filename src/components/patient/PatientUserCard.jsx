@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./patientDetails.css";
 const PatientUserCard = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
   const location = useLocation();
   const [userData] = useState(location?.state);
-  console.log("id", id, location);
-  console.log("location", location.state);
 
   return (
     <>
