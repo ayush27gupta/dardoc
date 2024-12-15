@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import LeftSidePanel from "../panels/LeftSidePanel";
+import { useLocation } from "react-router-dom";
 import CenterPanel from "../panels/CenterPanel";
+import LeftSidePanel from "../panels/LeftSidePanel";
 import RightPanel from "../panels/RightPanel";
 import "./dashboard.css";
-import { useLocation } from "react-router-dom";
 
 const Dashboard = (props) => {
   const location = useLocation();

@@ -11,14 +11,14 @@ const CenterPanel = (props) => {
   return (
     <div className="center-main">
       <div className="center-header">{header}</div>
-      {header === "Home" && (
+      { (header === "Home" || header ==="") && (
         <Summary
           title={TITLE}
           cardsData={SUMMARY_CARDS_DATA}
           imgSrc={"images/heart.jpg"}
         />
       )}
-      {header === "Home" && <Appointments />}
+      {(header === "Home" || header==="") && <Appointments />}
     </div>
   );
 };

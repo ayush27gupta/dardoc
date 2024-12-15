@@ -15,7 +15,7 @@ const AppointmentCards = (props) => {
   return (
     <div className="appointment-cards-container">
       {appointCards?.map((item, index) => (
-        <div className="appointment-card">
+        <div className="appointment-card" key={index}>
           <div className="appoint-card-name-header">
             <div className="appoint-card-name">{item?.name}</div>
             <div className="appoint-card-patient">

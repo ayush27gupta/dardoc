@@ -10,7 +10,7 @@ const PatientsCards = (props) => {
   return (
     <div className="mt-2 patient-cards">
       {patientData?.map((item, index) => (
-        <>
+        <div key={index}>
           <div className="patient-card">
             <div className="d-flex justify-content-between align-items-center">
               <div className="d-flex justify-content-between align-items-center ">
@@ -35,7 +35,7 @@ const PatientsCards = (props) => {
               <i className="fa fa-arrow-right" style={{ color: "#a2a2a2" }}></i>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

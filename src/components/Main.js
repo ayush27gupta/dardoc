@@ -9,14 +9,6 @@ const Main = () => {
   return (
     <div>
       <Routes>
-        <Route
-          path="/patient/:id"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <PatientDetails />
-            </Suspense>
-          }
-        />
         <Route path="/" element={<Dashboard />}>
           <Route path="home" element={<Dashboard />} />
           <Route path="online-visits" element={<Dashboard />} />
@@ -25,6 +17,14 @@ const Main = () => {
           <Route path="appointments" element={<Dashboard />} />
           <Route path="history" element={<Dashboard />} />
         </Route>
+        <Route
+          path="/patient/:id"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <PatientDetails />
+            </Suspense>
+          }
+        />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
