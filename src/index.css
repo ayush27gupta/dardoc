@@ -37,3 +37,17 @@
 .common-btn:disabled {
   background-color: grey;
 }
+
+
+.common-trends-container{
+  margin-top: 20px;
+  border: 0.8px solid #e6e6e6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.commmon-line-container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}

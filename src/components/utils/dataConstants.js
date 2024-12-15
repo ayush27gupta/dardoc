@@ -194,3 +194,78 @@ export const TSETOSTERONE_DATA = [
     ],
   },
 ];
+
+export const TABLE_DATA = [
+  {
+    test: "Triiodothyronine(T3), Free",
+    value: "4.72 pmol/L",
+    referenceRange: "4.301 - 6.759",
+    interpretation: "Normal",
+  },
+  {
+    test: "TSH",
+    value: "1.924 mIU/mL",
+    referenceRange: "0.3 - 4.2",
+    interpretation: "Normal",
+  },
+  {
+    test: "Thyroxine (T4), Free",
+    value: "8.93 pmol/L",
+    referenceRange: "11.58 - 21.88",
+    interpretation: "Low",
+  },
+  {
+    test: "Calcium, serum",
+    value: "2.53 mmol/L",
+    referenceRange: "2.146 - 2.495",
+    interpretation: "High",
+  },
+  {
+    test: "Triiodothyronine(T3), Free",
+    value: "4.72 pmol/L",
+    referenceRange: "4.301 - 6.759",
+    interpretation: "Normal",
+  },
+  {
+    test: "TSH",
+    value: "1.924 mIU/mL",
+    referenceRange: "0.3 - 4.2",
+    interpretation: "Normal",
+  },
+  {
+    test: "Thyroxine (T4), Free",
+    value: "8.93 pmol/L",
+    referenceRange: "11.58 - 21.88",
+    interpretation: "Low",
+  },
+  {
+    test: "Calcium, serum",
+    value: "2.53 mmol/L",
+    referenceRange: "2.146 - 2.495",
+    interpretation: "High",
+  },
+  {
+    test: "Triiodothyronine(T3), Free",
+    value: "4.72 pmol/L",
+    referenceRange: "4.301 - 6.759",
+    interpretation: "Normal",
+  },
+  {
+    test: "TSH",
+    value: "1.924 mIU/mL",
+    referenceRange: "0.3 - 4.2",
+    interpretation: "Normal",
+  },
+  {
+    test: "Thyroxine (T4), Free",
+    value: "8.93 pmol/L",
+    referenceRange: "11.58 - 21.88",
+    interpretation: "Low",
+  },
+  {
+    test: "Calcium, serum",
+    value: "2.53 mmol/L",
+    referenceRange: "2.146 - 2.495",
+    interpretation: "High",
+  },
+];

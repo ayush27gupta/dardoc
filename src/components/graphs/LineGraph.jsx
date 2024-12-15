@@ -5,8 +5,8 @@ import "rsuite/dist/rsuite.min.css"; // Ensure rsuite styles are imported
 import "./commonGraph.css";
 
 const LineGraph = ({
-  title = "Sales Over Time",
-  subTitle = "Week-wise data",
+  title = "",
+  subTitle = "",
   desc = "Since joining DarDoc",
   dateReported = "01 April 2024",
   data = [],
