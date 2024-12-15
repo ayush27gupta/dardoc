@@ -18,7 +18,7 @@ const Tasks = () => {
               className="patient-right"
               //   onClick={() => handlePatientClick(item)}
             >
-              <i class="fa fa-arrow-right" style={{ color: "#a2a2a2" }}></i>
+              <i className="fa fa-arrow-right" style={{ color: "#a2a2a2" }}></i>
             </div>
           </div>
         </div>

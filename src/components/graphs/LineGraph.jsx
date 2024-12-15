@@ -10,13 +10,12 @@ const LineGraph = ({
   desc = "Since joining DarDoc",
   dateReported = "01 April 2024",
   data = [],
-  handleAddLog
+  handleAddLog,
 }) => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [filteredData, setFilteredData] = useState(data);
 
-  // Function to get the start and end date of the current week
   const getCurrentWeekRange = () => {
     const now = new Date();
     const startOfWeek = now.getDate() - now.getDay(); // Sunday
@@ -45,15 +44,22 @@ const LineGraph = ({
   };
 
   useEffect(() => {
-    let filtered = [...data];
+    const filterDataByDate = (series) => {
+      if (startDate && endDate) {
+        return {
+          ...series,
+          values: series.values.filter((item) => {
+            const itemDate = new Date(item.date);
+            return (
+              itemDate >= new Date(startDate) && itemDate <= new Date(endDate)
+            );
+          }),
+        };
+      }
+      return series;
+    };
 
-    if (startDate && endDate) {
-      filtered = data.filter((item) => {
-        const itemDate = new Date(item.date);
-        return itemDate >= new Date(startDate) && itemDate <= new Date(endDate);
-      });
-    }
-
+    const filtered = data.map(filterDataByDate);
     setFilteredData(filtered);
   }, [startDate, endDate, data]);
 
@@ -64,10 +70,8 @@ const LineGraph = ({
       bottom: 50,
       left: 50,
     },
-
     legend: {
-      data: ["Weight Logs"],
-      color: "black",
+      data: filteredData.map((series) => series.name),
       bottom: 0,
       textStyle: {
         color: "black",
@@ -75,19 +79,17 @@ const LineGraph = ({
     },
     xAxis: {
       type: "category",
-      data: filteredData.map((item) => item.date),
+      data: filteredData[0]?.values.map((item) => item.date) || [],
     },
     yAxis: {
       type: "value",
     },
-    series: [
-      {
-        name: "Weight Logs",
-        data: filteredData.map((item) => item.value),
-        type: "line",
-        smooth: true,
-      },
-    ],
+    series: filteredData.map((series) => ({
+      name: series.name,
+      data: series.values.map((item) => item.value),
+      type: "line",
+      smooth: true,
+    })),
     tooltip: {
       trigger: "axis",
     },
