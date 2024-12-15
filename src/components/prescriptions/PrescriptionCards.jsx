@@ -6,7 +6,7 @@ const PrescriptionCards = (props) => {
   return (
     <div className="prescription-cards-container">
       {presData?.map((item, index) => (
-        <div className="pres-card" key={item.rxId}> {/* Added key prop here */}
+        <div className="pres-card" key={item.rxId}> 
           <div className="drug-details">
             <div className="drug-header">
               <div className="drug-name">{item?.drugName}</div>
