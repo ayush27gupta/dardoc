@@ -1,6 +1,7 @@
 import React from "react";
 import "../home/panels/rightPanel.css";
 import Support from "../home/managePanel/support/Support";
+import Tasks from "./Tasks";
 
 const PatientRightPanel = () => {
   const supportItems = [
@@ -14,6 +15,9 @@ const PatientRightPanel = () => {
       <div className="manage-header header-title">Open Tasks</div>
 
       <div className="d-flex flex-column justify-content-between">
+        <div className="patient-container">
+          <Tasks />
+        </div>
         <div className="patient-container"></div>
         <div className="support-container">
           <Support items={supportItems} />

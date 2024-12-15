@@ -5,7 +5,7 @@
   align-items: center;
   padding: 10px;
   gap: 10px;
-  width: 30px;
+  width: fit-content;
   height: 16px;
   background: #acd8d5;
   border-radius: 40px;

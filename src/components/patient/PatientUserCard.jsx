@@ -4,7 +4,7 @@ import "./patientDetails.css";
 const PatientUserCard = () => {
   const { id } = useParams();
   const location = useLocation();
-  const [userData, setUserData] = useState(location?.state);
+  const [userData] = useState(location?.state);
   console.log("id", id, location);
   console.log("location", location.state);
 

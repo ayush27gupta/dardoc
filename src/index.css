@@ -6,13 +6,35 @@
   text-align: left;
 }
 
-
-.sub-header-title{
+.sub-header-title {
   font-weight: 560;
   /* margin-left: 0.4rem; */
   font-size: 16px;
 }
 
-.width-90{
-  width:90%
+.width-90 {
+  width: 90%;
+}
+
+.common-btn {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: auto;
+  width: fit-content;
+  background: #1a1a1a;
+  border-radius: 4px;
+  color: white;
+  font-size: 10px;
+  /* font-weight: 510; */
+  line-height: 9.55px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.common-btn:disabled {
+  background-color: grey;
 }
