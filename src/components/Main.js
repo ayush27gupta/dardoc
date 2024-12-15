@@ -1,15 +1,22 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./home/dashboard/Dashboard";
 import PageNotFound from "./PageNotFound";
-import PatientDetails from "./patient/PatientDetails";
+
+const PatientDetails = React.lazy(() => import("./patient/PatientDetails"));
 
 const Main = () => {
   return (
     <div>
       <Routes>
-        <Route path="/patient/:id" element={<PatientDetails />} />
-
+        <Route
+          path="/patient/:id"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <PatientDetails />
+            </Suspense>
+          }
+        />
         <Route path="/" element={<Dashboard />}>
           <Route path="home" element={<Dashboard />} />
           <Route path="online-visits" element={<Dashboard />} />
