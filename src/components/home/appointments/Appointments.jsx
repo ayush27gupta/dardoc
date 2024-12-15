@@ -1,7 +1,7 @@
 import React from "react";
+import { APPOINT_CARDS_DATA } from "../../utils/dataConstants";
 import "./appointment.css";
 import AppointmentCards from "./AppointmentCards";
-import { APPOINT_CARDS_DATA } from "../../utils/dataConstants";
 
 const Appointments = () => {
   return (
@@ -9,12 +9,12 @@ const Appointments = () => {
       <div className="appoint-header">
         <div className="d-flex justify-content-between align-items-center">
           <div className="appoint-icon ">
-            <i class="far fa-calendar-alt"></i>
+            <i className="far fa-calendar-alt"></i>
           </div>
           <div className="appoint-header-text">Today's Appointments</div>
         </div>
         <div className="appoint-filter">
-          <i class="fa fa-filter"></i>
+          <i className="fa fa-filter"></i>
         </div>
       </div>
       <div className="appoint-cards-container">

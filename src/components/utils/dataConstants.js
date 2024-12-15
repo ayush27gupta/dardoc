@@ -269,3 +269,24 @@ export const TABLE_DATA = [
     interpretation: "High",
   },
 ];
+
+export const PRES_DATA = [
+  {
+    drugName: "Amoxicillin (Semaglutide)",
+    dosage: "500mg",
+    rxDate: "2024-12-01",
+    rxId: "RX1001",
+  },
+  {
+    drugName: "Lisinopril (Semaglutide)",
+    dosage: "10mg",
+    rxDate: "2024-12-05",
+    rxId: "RX1002",
+  },
+  {
+    drugName: "Metformin (Semaglutide)",
+    dosage: "500mg",
+    rxDate: "2024-12-10",
+    rxId: "RX1003",
+  },
+];
