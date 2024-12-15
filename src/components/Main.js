@@ -1,10 +1,24 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Dashboard from "./home/dashboard/Dashboard";
+import PatientDetails from "./patient/PatientDetails";
+import History from "./patient/History";
 
 const Main = () => {
   return (
     <div>
-      <Dashboard />
+      <Routes>
+        <Route path="/patient/:id" element={<PatientDetails />} />
+
+        <Route path="/" element={<Dashboard />}>
+          <Route path="home" element={<Dashboard />} />
+          <Route path="online-visits" element={<Dashboard />} />
+          <Route path="lab-reports" element={<Dashboard />} />
+          <Route path="prescriptions" element={<Dashboard />} />
+          <Route path="appointments" element={<Dashboard />} />
+          <Route path="history" element={<Dashboard />} />
+        </Route>
+      </Routes>
     </div>
   );
 };
